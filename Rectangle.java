@@ -14,6 +14,6 @@ public class Rectangle {
 
     // реализовать метод который рассчитывает площадь и выводит в консоль
     void printArea() {
-        System.out.println(Height * Width);
+        System.out.println(height * width);
     }
 }
