@@ -1,12 +1,11 @@
 package homework1;
 
 
+import java.util.Arrays;
+
 public class HomeWork1 {
 
     private static float g = 2.8f;
-
-    HomeWork1() {
-    }
 
     static void method1() {
     }
@@ -38,10 +37,6 @@ public class HomeWork1 {
         return a > 0 ? true : false;
     }
 
-    // реализовать метод который будет выводить массив в консоль
-    void printArray(Object[] objects) {
-    }
-
     // реализовать методы, которые принимают числовые параметры (int)
     // проверят четность
     boolean isParity(int a) {
@@ -68,6 +63,11 @@ public class HomeWork1 {
         return count;
     }
 
+   // реализовать метод который будет выводить массив в консоль
+    void PrintArray(Object[] objects){
+
+        System.out.println(Arrays.toString(objects));
+    }
 
     public static void main(String[] args) {
         HomeWork1 obj = new HomeWork1();
@@ -86,5 +86,7 @@ public class HomeWork1 {
         Roman.Fights(Anna);
         Zhenya.Fights(Anna);
 
+        String[] mas = {"aa", "bb", "cc", "dd", "ff"};
+        obj.PrintArray(mas);
     }
 }

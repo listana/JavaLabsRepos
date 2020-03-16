@@ -5,35 +5,35 @@ package homework1;
 
 public class Brick {
 
-    private String Name;
-    private float Width;
-    private float Height;
-    private float Z;
+    private String name;
+    private float width;
+    private float height;
+    private float z;
 
     public Brick(){
 
-        Name = "Default_brick";
-        Width = 1;
-        Height = 2;
-        Z = 3;
+        name = "Default_brick";
+        width = 1;
+        height = 2;
+        z = 3;
     }
 
-    public Brick(String n, float w, float h, float z){
-        Name = n;
-        Width = w;
-        Height = h;
-        Z = z;
+    public Brick(String name, float width, float height, float z){
+        this.name = name;
+        this.width = width;
+        this.height = height;
+        this.z = z;
     }
 
     public void PrintVolume(){
 
-        float res = Width * Height * Z;
+        float res = width * height * z;
         System.out.println("Volume = " + res);
     }
 
     public void PrintSumOfSquares(){
 
-        float res = 2 * Width * Height + 2 * Width * Z + 2 * Height * Z;
+        float res = 2 * width * height + 2 * width * z + 2 * height * z;
         System.out.println("All squares sum = " + res);
     }
 
